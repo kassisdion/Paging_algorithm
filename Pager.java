@@ -103,14 +103,14 @@ class Pager {
             System.arraycopy(buffer, 0, mMem_layout[i], 0, mNumberOfFrame);
         }
 
-        writeLog("**************** MEMORY ********************************************");
+        writeLog("**************** MEMORY ********************************************\n");
         for(int i = 0; i < mNumberOfFrame; i++) {
             for(int j = 0; j < mPages.length(); j++) {
-                writeLog("%3d ", mMem_layout[j][i]);
+                writeLog("[%3d] ", mMem_layout[j][i]);
             }
             writeLog("\n");
         }
-        writeLog("*********************************************************************");
+        writeLog("*********************************************************************\n");
     }
 
     private void opt() {
@@ -174,14 +174,14 @@ class Pager {
             System.arraycopy(buffer, 0, mMem_layout[i], 0, mNumberOfFrame);
         }
 
-        writeLog("**************** MEMORY ********************************************");
+        writeLog("**************** MEMORY ********************************************\n");
         for(int i = 0; i < mNumberOfFrame; i++) {
             for(int j = 0; j < mPages.length(); j++) {
-                writeLog("%3d ", mMem_layout[j][i]);
+                writeLog("[%3d] ", mMem_layout[j][i]);
             }
             writeLog("\n");
         }
-        writeLog("**************** MEMORY ********************************************");
+        writeLog("*********************************************************************\n");
     }
 
     private void lru() {
@@ -234,14 +234,14 @@ class Pager {
             System.arraycopy(buffer, 0, mMem_layout[i], 0, mNumberOfFrame);
         }
 
-        writeLog("**************** MEMORY ********************************************");
+        writeLog("**************** MEMORY ********************************************\n");
         for(int i = 0; i < mNumberOfFrame; i++) {
             for(int j = 0; j < mPages.length(); j++) {
-                writeLog("%3d ", mMem_layout[j][i]);
+                writeLog("[%3d] ", mMem_layout[j][i]);
             }
             writeLog("\n");
         }
-        writeLog("*********************************************************************");
+        writeLog("*********************************************************************\n");
     }
 
     private void clock() {
@@ -289,14 +289,14 @@ class Pager {
             }
         }
 
-        writeLog("**************** MEMORY ********************************************");
+        writeLog("**************** MEMORY ********************************************\n");
         for(int i = 0; i < mNumberOfFrame; i++) {
             for(int j = 0; j < mPages.length(); j++) {
-                writeLog("%3d %d ", mMem_layout[j][i], used_layout[j][i]);
+                writeLog("[%3d %3d] ", mMem_layout[j][i], used_layout[j][i]);
             }
             writeLog("\n");
         }
-        writeLog("*********************************************************************");
+        writeLog("*********************************************************************\n");
     }
 
     /*
